@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DesignEars – Custom Earmolds</title>
+  <meta name="description" content="Custom earmolds for sleeping, motorsports, musicians and more. Lightweight demo site with Apple‑style scrolling and product grid." />
+  <!-- Tailwind (CDN) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brand: { primary: '#37889b', accent: '#ff5c5c', paper: '#f5f9ff' } } } } };</script>
+  <!-- GSAP for scroll animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Favicon (placeholder) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%2337889b'/><text x='50' y='60' font-size='50' text-anchor='middle' fill='white'>D</text></svg>">
+  <style>
+    .glass{background:rgba(255,255,255,.7);backdrop-filter:saturate(140%) blur(8px)}
+    .panel{height:100svh;position:sticky;top:0}
+  </style>
+</head>
+<body class="bg-brand-paper text-slate-800">
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
+    <div class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="font-semibold tracking-tight text-slate-900">DesignEars</a>
+      <nav class="hidden sm:flex gap-6 text-sm">
+        <a href="#products" class="hover:text-brand-primary">Products</a>
+        <a href="#about" class="hover:text-brand-primary">About</a>
+        <a href="#contact" class="hover:text-brand-primary">Contact</a>
+      </nav>
+      <a href="#contact" class="rounded-2xl bg-brand-primary px-4 py-2 text-white text-sm shadow">Get in touch</a>
+    </div>
+  </header>
+
+  <!-- Hero storytelling panels -->
+  <main id="top">
+    <section class="relative">
+      <!-- Panel 1 -->
+      <div class="panel flex items-center bg-[url('https://designears.com.au/wp-content/uploads/2025/03/slimfit-scaled.jpeg')] bg-cover bg-center">
+        <div class="mx-auto max-w-5xl px-4">
+          <div class="glass rounded-3xl p-8 md:p-12 shadow-xl">
+            <h1 class="text-3xl md:text-5xl font-semibold leading-tight">Custom Earmolds,<br class="hidden sm:block"> crafted for how you live.</h1>
+            <p class="mt-4 text-lg text-slate-700">Sleeping, motorcycling, musicians, shooting, swimming – premium comfort & protection.</p>
+            <div class="mt-6 flex gap-3"><a href="#products" class="rounded-xl bg-slate-900 text-white px-5 py-3 text-sm">Browse products</a><a href="#contact" class="rounded-xl border border-slate-300 px-5 py-3 text-sm">Enquire</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2 -->
+      <div class="panel flex items-center bg-gradient-to-b from-white via-brand-paper to-white">
+        <div class="mx-auto max-w-5xl px-4 grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-2xl md:text-4xl font-semibold">Comfort that disappears.</h2>
+            <p class="mt-4 text-slate-700">Soft medical‑grade silicone, shaped to your ear. Wear all night or under a helmet.</p>
+          </div>
+          <img alt="Canal tip earmolds" class="rounded-2xl shadow-lg" src="https://designears.com.au/wp-content/uploads/2024/01/canal-tip-yellow.jpg"/>
+        </div>
+      </div>
+
+      <!-- Panel 3 (3D placeholder) -->
+      <div class="panel flex items-center bg-white">
+        <div class="mx-auto max-w-5xl px-4 grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h2 class="text-2xl md:text-4xl font-semibold">See it in 3D (coming soon)</h2>
+            <p class="mt-4 text-slate-700">We’re adding interactive 3D previews so customers can inspect fit and shape.</p>
+            <p class="mt-2 text-sm text-slate-500">// Later: include <model-viewer> and load a .glb/.gltf model.</p>
+          </div>
+          <div class="aspect-square rounded-2xl border border-dashed grid place-content-center text-slate-400">
+            <span class="text-sm">3D model placeholder</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products: ALL categories/products (curated) -->
+    <section id="products" class="py-20 bg-white">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex items-end justify-between gap-6">
+          <h2 class="text-3xl md:text-4xl font-semibold">Products</h2>
+          <a href="#contact" class="text-sm underline">Need help choosing?</a>
+        </div>
+        <p class="mt-4 text-sm text-slate-600">Demo content adapted from DesignEars site categories "Applications/Portfolios" (Aviation, Communication, Industry, Law Enforcement, Motorcycling, Motorsports, Music, Shooting, Sleeping, Swimming, Water Protection, Workplace). Links open the original details pages.</p>
+
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Canal Tip -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolio/motorcycling/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2024/01/canal-tip-yellow-2.jpg" alt="Canal tip earmolds" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Canal Tip Earmolds</h3>
+              <p class="mt-2 text-sm text-slate-600">Discrete and extremely comfortable—fills only the canal and part of the concha. Popular for sleep, work, helmets, swimming.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Impressions stored 5 yrs</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Carved Slim Fit -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolio/motorsports/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2025/03/slimfit-scaled.jpeg" alt="Carved slim fit earmolds" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Carved Slim Fit Earmolds</h3>
+              <p class="mt-2 text-sm text-slate-600">Digitally sculpted slim profile for use under helmets; comfort all day; optional filters available.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Helmet‑friendly</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Full Shell -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolios/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2024/01/full-shell-slim-aaron-julie.jpg" alt="Full shell earmolds" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Full Shell Earmolds</h3>
+              <p class="mt-2 text-sm text-slate-600">Maximum coverage and attenuation for industrial/workplace or high‑noise environments.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">High isolation</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Presenters (Skeleton) -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolio/law-enforcement/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/09/presenters.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2024/01/canal-tip-yellow.jpg'" alt="Presenters skeleton earmold" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Presenters (Skeleton) Earmold</h3>
+              <p class="mt-2 text-sm text-slate-600">Thin framework that locks into the ear for discrete, secure wear—ideal for security and presenters.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Law enforcement / events</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Listen Only -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolio/law-enforcement/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/09/listen-only.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2024/01/canal-tip-yellow.jpg'" alt="Listen only earmold" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Listen‑Only Earmold</h3>
+              <p class="mt-2 text-sm text-slate-600">Channel radio/phone audio directly to the ear for clear instructions in loud environments.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Comms accessories</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Two Way / PTT -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolio/law-enforcement/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/09/two-way.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2024/01/canal-tip-yellow.jpg'" alt="Two way PTT" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Two‑Way (PTT) Earmold</h3>
+              <p class="mt-2 text-sm text-slate-600">Push‑to‑talk with in‑line mic; connect to common radios for clear duplex communication.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">With microphone</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- In‑Ear Race Monitors -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolios/page/2/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/09/in-ear-race-monitors.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2025/03/slimfit-scaled.jpeg'" alt="In‑ear race monitors" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">In‑Ear Race Monitors</h3>
+              <p class="mt-2 text-sm text-slate-600">Custom monitors for drivers—plug into intercoms for crystal‑clear comms with crew/control.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Motorsports</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Pit Crew Monitors -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolios/page/2/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/09/pit-crew-monitors.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2024/01/full-shell-slim-aaron-julie.jpg'" alt="Pit crew monitors" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">In‑Ear Pit Crew Monitors</h3>
+              <p class="mt-2 text-sm text-slate-600">High‑isolation comms for pits; secure under headsets, long‑wear comfort.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Crew comms</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Aviation -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolios/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/11/aviation.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2024/01/canal-tip-yellow-2.jpg'" alt="Aviation earmolds" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Aviation Earmolds</h3>
+              <p class="mt-2 text-sm text-slate-600">Slim, comfortable fit tailored for pilots; integrate with headsets and intercoms.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Flight headsets</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Music / Musicians -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolio/musician/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/09/musician.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2024/01/canal-tip-yellow.jpg'" alt="Musician earplugs" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Musicians Earplugs / IEM</h3>
+              <p class="mt-2 text-sm text-slate-600">From filtered canal tips to custom IEMs; optional custom sleeves for Shure/AT/Westone etc.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Stage / studio</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Shooting (CENS) -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolio/sport-shooting/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/09/shooting.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2024/01/full-shell-slim-aaron-julie.jpg'" alt="Shooting earplugs" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Sport Shooting – Electronic</h3>
+              <p class="mt-2 text-sm text-slate-600">Electronic hearing protection with optimized modes (CENS range); custom earmold interface.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">EN352 rated</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Swimming / Water -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolio/swimming/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/09/swimming.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2024/01/canal-tip-yellow-2.jpg'" alt="Swimming earplugs" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Swimming / Water Protection</h3>
+              <p class="mt-2 text-sm text-slate-600">Seal out water with soft silicone canal tips—keep ears dry; easy to clean, durable.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Water‑tight seal</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+
+          <!-- Industry / Workplace -->
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="https://designears.com.au/portfolio/" target="_blank" rel="noopener">
+              <img src="https://designears.com.au/wp-content/uploads/2023/09/workplace.jpg" onerror="this.src='https://designears.com.au/wp-content/uploads/2024/01/full-shell-slim-aaron-julie.jpg'" alt="Workplace protection" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Industry / Workplace</h3>
+              <p class="mt-2 text-sm text-slate-600">Custom protection for factories and high‑noise sites; options from canal tip to full shell.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Compliance‑ready</span><a class="text-brand-primary text-sm" href="#contact">Enquire</a></div>
+            </div>
+          </article>
+        </div>
+        <p class="mt-6 text-xs text-slate-500">Image credits & copy adapted from DesignEars site pages for demo purposes.</p>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-brand-paper">
+      <div class="mx-auto max-w-6xl px-4 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-semibold">About</h2>
+          <p class="mt-4 text-slate-700">We manufacture custom hearing protection across sleeping, motorcycling, motorsports, aviation, music, shooting and workplace applications, using premium medical‑grade silicone and modern 3D processes.</p>
+          <p class="mt-2 text-sm text-slate-600">Impressions required • 7–10 business days turnaround • 4‑year mold integrity warranty (lab produced).</p>
+        </div>
+        <div class="rounded-3xl bg-white p-6 shadow-sm border">
+          <ul class="space-y-2 text-sm text-slate-700">
+            <li>• Impressions stored digitally for up to 5 years</li>
+            <li>• Optional filters/modules depending on use case</li>
+            <li>• Comfort densities: 40 / 70 shore options</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="mx-auto max-w-3xl px-4">
+        <h2 class="text-3xl md:text-4xl font-semibold">Contact</h2>
+        <p class="mt-3 text-slate-600">Fill in your details and we’ll get back to you. (Dummy details—replace later.)</p>
+        <form class="mt-8 grid gap-4" onsubmit="event.preventDefault(); alert('Thanks! We\'ll be in touch.');">
+          <div class="grid md:grid-cols-2 gap-4">
+            <input class="rounded-2xl border px-4 py-3" placeholder="Your name" required />
+            <input class="rounded-2xl border px-4 py-3" placeholder="Email" type="email" required />
+          </div>
+          <input class="rounded-2xl border px-4 py-3" placeholder="Mobile" />
+          <textarea class="rounded-2xl border px-4 py-3" rows="4" placeholder="How can we help?"></textarea>
+          <button type="submit" class="rounded-2xl bg-brand-accent text-white px-5 py-3 w-fit shadow">Send</button>
+          <p class="text-sm text-slate-500">Or email <a class="underline" href="mailto:sales@example.com">sales@example.com</a> or call <a href="tel:+6112345678" class="underline">+61 1234 5678</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-10 border-t bg-white">
+    <div class="mx-auto max-w-6xl px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="year"></span> DesignEars Demo</p>
+      <p class="text-xs text-slate-400">Built with Tailwind & GSAP • Single HTML file for easy hosting.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- Scroll effects (fix: keep hero fully opaque at top) ---
+    if (window.gsap && window.ScrollTrigger) {
+      gsap.registerPlugin(ScrollTrigger);
+
+      // 1) Baseline: make sure ALL panels start fully opaque (prevents faded hero at top)
+      gsap.set('.panel', { opacity: 1 });
+
+      // 2) Fade-in only for panels AFTER the first (hero remains 100% opaque)
+      const panels = gsap.utils.toArray('.panel');
+      panels.forEach((panel, i) => {
+        if (i > 0) {
+          gsap.from(panel, {
+            opacity: 0,
+            duration: 0.6,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: panel,
+              start: 'top 85%',
+              end: 'bottom top',
+              toggleActions: 'play none none reverse'
+            }
+          });
+        }
+
+        // Subtle parallax for content within each panel
+        const el = panel.querySelector('img, .glass, .grid, .mx-auto');
+        if (el) {
+          gsap.to(el, { yPercent: -6, ease: 'none', scrollTrigger: { trigger: panel, scrub: 0.4 } });
+        }
+      });
+    }
+  </script>
+</body>
+</html>
