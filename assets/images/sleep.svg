@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#e0f2fe" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="36" fill="url(#g)" />
+  <circle cx="320" cy="260" r="160" fill="#f8fafc" opacity="0.6" />
+  <circle cx="880" cy="420" r="220" fill="#0f172a" opacity="0.08" />
+  <text x="120" y="160" font-family="'Inter','Segoe UI',sans-serif" font-weight="700" font-size="60" fill="#0b1727">Sleep</text>
+  <text x="120" y="230" font-family="'Inter','Segoe UI',sans-serif" font-weight="400" font-size="30" fill="#0f172a" opacity="0.8">Discrete canal tips</text>
+  <g transform="translate(700 180)">
+    <path d="M180 22c-32 18-70 54-92 96-22 44-30 94-16 134 14 40 52 70 94 86 44 16 96 18 134-6 44-26 70-78 76-128 4-40-18-86-52-110-30-22-82-24-144-72z" fill="#f8fafc" stroke="#0f172a" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+  </g>
+</svg>

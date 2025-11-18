@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – EarPro</title>
+  <meta name="description" content="Portfolio of custom earmolds by category including motorcycling, motorsports, aviation, musicians and more." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { brand: { primary: '#37889b', accent: '#ff5c5c', paper: '#f5f9ff' } } } } };</script>
+  <style>body{background:linear-gradient(180deg,#f5f9ff 0%,#fff 50%,#f5f9ff 100%);}</style>
+</head>
+<body class="text-slate-800">
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b">
+    <div class="mx-auto max-w-6xl px-4 py-4 flex items-center justify-between">
+      <a href="/" class="font-semibold tracking-tight text-slate-900">EarPro</a>
+      <nav class="hidden sm:flex gap-6 text-sm">
+        <a href="/index.html#products" class="hover:text-brand-primary">Products</a>
+        <a href="/index.html#about" class="hover:text-brand-primary">About</a>
+        <a href="/index.html#contact" class="hover:text-brand-primary">Contact</a>
+      </nav>
+      <a href="/index.html#contact" class="rounded-2xl bg-brand-primary px-4 py-2 text-white text-sm shadow">Book a fitting</a>
+    </div>
+  </header>
+
+  <main class="pb-16">
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 opacity-70" aria-hidden="true">
+        <img src="/assets/images/hero-slimfit.svg" alt="Slim fit graphic" class="w-full h-full object-cover" />
+      </div>
+      <div class="relative mx-auto max-w-5xl px-4 py-20 md:py-28 grid md:grid-cols-2 gap-10 items-center">
+        <div class="bg-white/80 backdrop-blur rounded-3xl p-8 shadow-xl border">
+          <p class="text-sm uppercase tracking-[0.2em] text-brand-primary">Portfolio</p>
+          <h1 class="text-3xl md:text-5xl font-semibold mt-3">Application-led earmolds that match how you work, ride, fly or play.</h1>
+          <p class="mt-4 text-lg text-slate-700">Each page below mirrors a typical DesignEars portfolio entry with a clear overview, hero imagery, galleries and feature lists so you can direct customers to the right solution.</p>
+          <div class="mt-6 flex gap-3">
+            <a href="#grid" class="rounded-xl bg-slate-900 text-white px-5 py-3 text-sm">Browse categories</a>
+            <a href="/index.html#contact" class="rounded-xl border border-slate-300 px-5 py-3 text-sm">Talk with us</a>
+          </div>
+        </div>
+        <div class="bg-white/80 backdrop-blur rounded-3xl p-6 shadow-lg border">
+          <h2 class="text-xl font-semibold">What you’ll find</h2>
+          <ul class="mt-4 space-y-2 text-slate-700 text-sm">
+            <li>• Hero imagery saved locally for fast, offline-friendly demos.</li>
+            <li>• Key specs and use-cases per category (motorcycling, musicians, aviation and more).</li>
+            <li>• CTA buttons that loop back to the main contact form.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="grid" class="mt-6 md:mt-10">
+      <div class="mx-auto max-w-6xl px-4">
+        <div class="flex items-end justify-between gap-6">
+          <div>
+            <p class="text-sm uppercase tracking-[0.18em] text-brand-primary">Categories</p>
+            <h2 class="text-3xl md:text-4xl font-semibold">Direct links to every portfolio page</h2>
+            <p class="mt-3 text-slate-600 max-w-3xl">Use these cards as a hub. Each one opens a detail page with a cohesive layout, feature set and image gallery that mirrors the official DesignEars portfolio structure.</p>
+          </div>
+          <a href="/index.html#contact" class="hidden sm:inline text-sm underline">Need a recommendation?</a>
+        </div>
+
+        <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="/portfolio/motorcycling.html">
+              <img src="/assets/images/motorcycling.svg" alt="Motorcycling" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Motorcycling</h3>
+              <p class="mt-2 text-sm text-slate-600">Slim canal tips that disappear under helmets with optional filters for road noise.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Helmet friendly</span><a class="text-brand-primary text-sm" href="/portfolio/motorcycling.html">View page</a></div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="/portfolio/motorsports.html">
+              <img src="/assets/images/motorsports.svg" alt="Motorsports" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Motorsports</h3>
+              <p class="mt-2 text-sm text-slate-600">Race and pit-crew monitors with secure fit and high isolation for comms.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Track ready</span><a class="text-brand-primary text-sm" href="/portfolio/motorsports.html">View page</a></div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="/portfolio/aviation.html">
+              <img src="/assets/images/aviation.svg" alt="Aviation" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Aviation</h3>
+              <p class="mt-2 text-sm text-slate-600">Custom earmolds that integrate seamlessly with flight headsets.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Under-headset</span><a class="text-brand-primary text-sm" href="/portfolio/aviation.html">View page</a></div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="/portfolio/law-enforcement.html">
+              <img src="/assets/images/law.svg" alt="Law enforcement" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Law Enforcement</h3>
+              <p class="mt-2 text-sm text-slate-600">Listen-only, presenters and PTT builds for secure communication.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Secure fit</span><a class="text-brand-primary text-sm" href="/portfolio/law-enforcement.html">View page</a></div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="/portfolio/musician.html">
+              <img src="/assets/images/musician.svg" alt="Musicians" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Musicians / IEM</h3>
+              <p class="mt-2 text-sm text-slate-600">Filtered earplugs and in-ear monitors tuned for stage and studio.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Balanced attenuation</span><a class="text-brand-primary text-sm" href="/portfolio/musician.html">View page</a></div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="/portfolio/sport-shooting.html">
+              <img src="/assets/images/shooting.svg" alt="Sport shooting" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Sport Shooting</h3>
+              <p class="mt-2 text-sm text-slate-600">Electronic protection paired with custom molds for reliable sealing.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Range ready</span><a class="text-brand-primary text-sm" href="/portfolio/sport-shooting.html">View page</a></div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="/portfolio/swimming.html">
+              <img src="/assets/images/swimming.svg" alt="Swimming" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Swimming / Water</h3>
+              <p class="mt-2 text-sm text-slate-600">Soft canal tips that keep water out for swimmers and surfers.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Water tight</span><a class="text-brand-primary text-sm" href="/portfolio/swimming.html">View page</a></div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="/portfolio/workplace.html">
+              <img src="/assets/images/workplace.svg" alt="Workplace" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Industry / Workplace</h3>
+              <p class="mt-2 text-sm text-slate-600">High-isolation earmolds that help meet workplace compliance.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Compliance ready</span><a class="text-brand-primary text-sm" href="/portfolio/workplace.html">View page</a></div>
+            </div>
+          </article>
+
+          <article class="rounded-3xl overflow-hidden border bg-white shadow-sm hover:shadow-lg transition">
+            <a href="/portfolio/sleep.html">
+              <img src="/assets/images/sleep.svg" alt="Sleep canal tips" class="w-full aspect-video object-cover" />
+            </a>
+            <div class="p-6">
+              <h3 class="text-lg font-semibold">Sleep / Canal Tips</h3>
+              <p class="mt-2 text-sm text-slate-600">Discrete canal-fit plugs for side sleepers and everyday quiet.</p>
+              <div class="mt-4 flex items-center justify-between"><span class="text-slate-500 text-sm">Night-long comfort</span><a class="text-brand-primary text-sm" href="/portfolio/sleep.html">View page</a></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-10 border-t bg-white mt-12">
+    <div class="mx-auto max-w-6xl px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-sm text-slate-500">© <span id="year"></span> EarPro Portfolio Demo</p>
+      <a class="text-sm text-brand-primary" href="/index.html#contact">Contact the team</a>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
